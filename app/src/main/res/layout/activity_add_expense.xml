@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textColor="@color/blue_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Amount e.g. 120.50"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Date e.g. 2026-06-14"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Description"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnChoosePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Attach Receipt Photo"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/txtPhotoStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No photo selected"
+            android:textColor="@color/text_muted"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnSaveExpense"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Save Expense"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
